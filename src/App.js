@@ -1,8 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
+import {sum as add, multiple} from './Math';
 import './App.css';
 
 function App() {
+  const sum = "SUM!"
+  console.log(sum);
+  console.log(add);
+  console.log(multiple);
   return (
     <div className="App">
       <header className="App-header">
