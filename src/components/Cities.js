@@ -2,6 +2,7 @@ import React from "react";
 import { Switch, Route, withRouter } from "react-router";
 import CityList from "./CityList";
 import Weather from "./Weather/index";
+import { render } from "@testing-library/react";
 
 const API_CITIES = "http://localhost:8888/weather-service/available-cities";
 
@@ -23,9 +24,6 @@ class Cities extends React.Component {
     const { cities } = this.state;
     return (
       <div>
-        <h1>Cities</h1>
-        <p>City list</p>
-
         <Switch>
           <Route
             exact
@@ -38,4 +36,5 @@ class Cities extends React.Component {
     );
   }
 }
+render() 
 export default withRouter(Cities);

@@ -14,6 +14,8 @@ const CityList = (props) => {
   
   return (
     <ul>
+    <h1>Cities</h1>
+    <p>City list</p>
       {uniqueCities.map((item) => {
         //console.log(item);
         return (

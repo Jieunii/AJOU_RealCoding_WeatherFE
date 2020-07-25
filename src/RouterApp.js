@@ -12,7 +12,7 @@ const RouterApp = () => {
     <div className="App">
       <Navigation />
       <Header cityName={cityName} />
-      <p>Hello world!</p>
+      {/*<p>Hello world!</p>*/}
 
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
