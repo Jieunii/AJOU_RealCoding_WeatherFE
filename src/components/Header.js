@@ -1,12 +1,21 @@
 import React from 'react';
 import logo from '../logo.svg';
 
+//es5 function
+//function Header(props){
 
-function Header(props){
-    console.log(props);
-    console.log(props.cityName);
+//es6 function
+//const Header = (props) => {    
+const Header = ({cityName}) => {    
 
-    const cityName = props.cityName;
+    //console.log(props);
+    //props = {cityName: 'Seoul'}
+    //console.log(props.cityName);
+    
+
+    
+    //const cityName = props.cityName;//es5   
+//    const {cityName} = props;//es6
 
 
     return (
